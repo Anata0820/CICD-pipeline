@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: anata0820/awesome-app:1.1
+        image: anata0820/awesome-app
         ports:
         - containerPort: 80

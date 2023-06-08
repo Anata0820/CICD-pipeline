@@ -22,7 +22,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: anata0820/awesome-app:1.1
+          images: anata0820/awesome-app
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
