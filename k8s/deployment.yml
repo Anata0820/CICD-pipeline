@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: awesome-deployment
+  namespace: awesome-ns
+  labels:
+    app: awesomeness
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: awesomeness
+  template:
+    metadata:
+      labels:
+        app: awesomeness
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
