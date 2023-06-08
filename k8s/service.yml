@@ -4,10 +4,10 @@ metadata:
   name: nginx-service
   namespace: awesome-ns
   labels:
-    app: awesome-app
+    app: awesomeness
 spec:
   selector:
-    app: awesome-app
+    app: awesomeness
   type: LoadBalancer
   ports:
     - name: http
